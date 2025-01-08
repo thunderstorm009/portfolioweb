@@ -1,71 +1,310 @@
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 50px 200px;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
 }
-
-
-.open-sans-normal {
-  font-family: "Open Sans", serif;
+body{
+    font-family: "Open Sans", serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
 }
-.nav-title{
+/* Share Style */
+.btn-praimery{
+    background: #FD6E0A;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 18px 35px;
+    border: none;
+}
+.section-title{
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(24, 24, 24);
+    margin-bottom: 30px;
+    /* margin: 0 auto; */
+}
+.sec-discription{
+    color: #757575;
+    font-size: 18px;
+}
+.center{
+    text-align: center;
+}
+
+/* Nav Section Start */
+.header{
+    background: url('../images/developer.png'),url(../images/header_bg.png),rgb(255, 248, 243);
+    background-repeat: no-repeat;
+    background-position: top left,bottom right;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 150px;
+
+}
+.mery{
     font-weight: 800;
     font-size: 45px;
+}
+.mery span{
+    color: #FD6E0A;
 }
 nav ul{
     display: flex;
     align-items: center;
-}
-.text-primary{
-    color: #FD6E0A;
-
+    
 }
 nav ul li{
     list-style: none;
-    margin-right: 50px;
 }
 nav li a{
     text-decoration: none;
-    font-size: 20px;
-}
-.dark-2{
     color: #474747;
-}
-.header{
-    background-image: url('../images/developer.png'), url('../images/header_bg.png');
-    background-repeat: no-repeat;
-    background-position: top left, bottom right;
-}
-.banner {
-    display: flex;
-    justify-content: space-between;
-    margin: 0px 35px 0 230px;
-}
-.btn-primary{
-    background-color: #FD6E0A;
-    font-weight: bold;
-    color: white;
-    border: none;
     font-size: 20px;
-    padding: 18px 35px;
-    border-radius: 5px;
-.banner-greetings{
- font-size: 45px;
- font-weight: 600;
-}
-.banner-title{
-    font-weight: bold;
-    font-size: 85px;
+    margin-right: 50px;
 }
 
-.banner-content {
-    max-width: 580px;
+/* Banner Style */
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 30px 0 150px;
 }
-.banner-profile-pic {
+.banner-content{
+    max-width: 580px;
+    height: 359px;
+}
+
+.banner-sub-title{
+    color:#474747;
+    font-size: 45px;
+    font-weight: 600;
+}
+.banner-title{
+    color: #181818;
+    font-size: 85px;
+    font-weight: bold;
+}.banner p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #757575;
+    margin: 10px 0 20px;
+}
+.banner button{
+    margin-right: 10px;
+}
+.banner-profile{
     width: 580px;
+    height: 676px;
+}
+
+
+/* about Style */
+.about{
+    background: #FFF8F3;
+    border-radius: 10px;
+    margin: 130px 230px 100px;
+    padding: 131px 157px;
+    text-align: center
+}
+.sec-conteinar{
+    background: white;
+    border: 1px solid black;
+    width: 827px;
+    height: 288px;
+    margin: 0 auto;
+}
+.about-items{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.about-title{
+    font-weight: 500;
+}
+.about-discription{
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.sckills{
+    margin: 70px 170px;
+    padding: 71px 130px;
+    background: rgb(255, 255, 255);
+}
+.sckills .sec-discription{
+    margin-bottom: 15px;
+}
+.skills-container{
+    display: flex;
+    
+}
+.skill{
+    padding: 30px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+    margin: 15px;
+}
+.skill img{
+    margin: 10px 0;
+}
+.skill-title{
+    margin: 5px 0 15px 0;
+}
+
+
+/* Resume Style */
+.resume{
+    margin: 70px 170px;
+    padding: 71px 130px;
+    
+}
+.resume-conteinar{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.resume-heder{
+    margin: 5px 400px 80px;
+    color: rgb(24, 24, 24);
+    font-family: Open Sans;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: center;
+    
+}
+.resume-column{
+    width: 511px;
+    
+}
+.resume-column-titile{
+    margin-bottom: 45px;
+    color: rgb(71, 71, 71);
+    font-family: Open Sans;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 41px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.experience-title{
+    margin: 25px 0 5px;
+    color: rgb(71, 71, 71);
+    font-family: Open Sans;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0%;
+    text-align: left;
+
+}
+.experience-sub-title{
+    margin-bottom: 18px;
+    color: rgb(117, 117, 117);
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.experience-description{
+    color: rgb(117, 117, 117);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.bd{
+    margin: 30px 500px;
+}
+.Footer{
+    background: rgb(255, 248, 243);
+    display: flex;
+    padding: 130px 230px;
+    justify-content: space-between;
+}
+.connect-title{
+    color: rgb(24, 24, 24);
+    font-family: Open Sans;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0%;
+    
+}
+.connect-discription{
+    color: rgb(71, 71, 71);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 20px 0;
+}
+.connect{
+    width: 556px;
+}
+.massage{
+    width: 461px;
+}
+.footer-form{
+    width: 461px;
+    height: 64px;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    margin-bottom: 24px;
+}
+.footer-form-sms{
+    width: 461px;
+    height: 150px;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+input::placeholder{
+    color: rgb(117, 117, 117);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding-left: 10px;
+}
+textarea::placeholder{
+    color: rgb(117, 117, 117);
+    font-family: Open Sans;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding:10px 0 0 20px;
+}
+
+.icons{
+   display: flex;
+}
+.lm{
+    margin-left: 20px;
+}
+.icon{
+    margin:5px;
+    color:rgb(253, 110, 10) ;
+    font-size: 30px;
 }
